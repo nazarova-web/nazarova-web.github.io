@@ -20,6 +20,7 @@
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/
 		bootstrap-grid.min.css">
+    <link rel="stylesheet" href="animate.css">
 		<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -28,16 +29,16 @@
   <div class="container">
   	<div class="row">
   		<div class="col-lg-7">
-  			<img class="header-img" src="img/main.img.png" alt="Монитор">
+  			<img class="header-img animated fadeInLeft" src="img/main.img.png" alt="Монитор">
   			</div>
   		<!-- /.col-7 -->
   		<div class="col-lg-5">
-  			<p class="header-pretitle"> Web-разработчик
+  			<p class="header-pretitle animated fadeInRight" data-animated-delay="0.1s"> Web-разработчик
   			</p>
-  			<h1 class="header-title">Лида Назарова</h1>
-  			<p class="header-subtitle">Верстка на HTML/CSS <br>
+  			<h1 class="header-title animated fadeInRight" data-animated-delay="0.2s">Лида Назарова</h1>
+  			<p class="header-subtitle animated fadeInRight" data-animated-delay="0.3s">Верстка на HTML/CSS <br>
   			Разработка сайтов под ключ</p>
-  			<div class="header-buttom-block">
+  			<div class="header-buttom-block animated fadeInRight" data-animated-delay="0.4s">
   			 <a href="https://vk.me/lidanazarova" class="header-button">Связаться</a>
   			 <small>*Это бесплатно</small>
   			</div>
@@ -51,7 +52,7 @@
 
  <section class="portfolio">
  	<div class="container">
- 		<div class="portfolio-block">
+ 		<div class="portfolio-block animated fadeIn">
  		<h2 class="portfolio-title">Портфолио</h2>
  		<p class="portfolio-subtitle">Мои работы</p>
  		<div class="row">
@@ -90,10 +91,10 @@
  			<div class="col-md-4">
  				<div class="social-block">
  				  <p>Подпишитесь:</p>
- 				  <a href="https://www.facebook.com/lida.nazarova.7"><img src="img/facebook-logo-button.png" alt="Facebook"></a>
+ 				  <a href="https://www.facebook.com/lida.nazarova.7"><img class="animated bounceInUp" src="img/facebook-logo-button.png" alt="Facebook"></a>
 
- 				  <a href="https://vk.com/lidanazarova"><img src="img/vk-social-logotype.png"  alt="Вконтакте"></a>
- 				  <a href="https://www.instagram.com/lidanazarova3202/"><img src="img/instagram-icon-white-on-black-circle.png"  alt="Instagram"></a>
+ 				  <a href="https://vk.com/lidanazarova"><img class="animated bounceInUp" src="img/vk-social-logotype.png"  alt="Вконтакте"></a>
+ 				  <a href="https://www.instagram.com/lidanazarova3202/"><img class="animated bounceInUp" src="img/instagram-icon-white-on-black-circle.png"  alt="Instagram"></a>
  				</div>
  				
  			</div>
@@ -109,6 +110,11 @@
  	</div>
  	<!-- /.container -->
  </footer>
+
+ <script> src="Js/wow.min.js"</script>
+ <script>
+   new WOW().init();
+ </script>
 
 </body>
 </html>
